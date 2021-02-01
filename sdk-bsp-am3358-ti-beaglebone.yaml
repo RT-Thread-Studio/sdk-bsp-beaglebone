@@ -1,0 +1,109 @@
+board:
+  buy_url_cn: https://beagleboard.org/bone-original
+  buy_url_global: https://beagleboard.org/bone-original
+  debug_interface: SWD
+  debugger: J-Link
+  description_en: BeagleBone is an $89 MSRP, credit-card-sized Linux computer that
+    connects to the Internet and runs software such as Android 4.0 and Ubuntu. With
+    plenty of I/O and processing power for real-time analysis provided by an AM335x
+    720MHz ARM® processor, BeagleBone can be complemented with cape plug-in boards
+    to augment functionality.
+  description_zh: BeagleBone是一台售价89美元的建议零售价，信用卡大小的Linux计算机，可连接到互联网并运行诸如Android 4.0和Ubuntu之类的软件。
+    BeagleBone具有AM335x 720MHzARM®处理器提供的大量I / O和处理能力，用于实时分析，可以与海角插件板配合使用以增强功能。
+  emulator_machine: ''
+  large_image: documents/images/BeagleBone_large.png
+  name: AM3358-TI-BEAGLEBONE
+  price_cn: 630 CNY
+  price_global: 89 USD
+  sale_contact_cn: https://beagleboard.org/bone-original
+  sale_contact_global: https://beagleboard.org/bone-original
+  small_image: documents/images/BeagleBone_small.png
+  vendor: TI
+  version: Rev A6
+chip:
+  chip_name: AM3358_ZCZ
+  clock_source: HSE
+  device_vendor: TI
+  family_name: AM3358
+  rx_name: PA10
+  series_name: AM3358
+  source_freq: '8000000'
+  sub_series_name: AM3358
+  target_freq: '240000000'
+  tx_name: PA9
+  uart_name: UART1
+docs:
+- category: other
+  file: documents/BEAGLEBONE_REV_A6A.pdf
+  title: BEAGLEBONE_REV_A6A_SCH
+- category: sheet
+  file: documents/am3358.pdf
+  title: am3358
+example_projects: []
+features:
+- 256MB DDR2 RAM
+- 3D graphics accelerator
+- 2x PRU 32-bit RISC CPUs
+- 'USB client: power, debug and device'
+- USB host
+- Ethernet
+- 2x 46 pin headers
+- 4GB microSD card w/ Angstrom Distribution
+features_zh:
+- 256MB DDR2 RAM
+- 3D graphics accelerator
+- 2x PRU 32-bit RISC CPUs
+- 'USB client: power, debug and device'
+- USB host
+- Ethernet
+- 2x 46 pin headers
+- 4GB microSD card w/ Angstrom Distribution
+pkg_type: Board_Support_Packages
+pkg_vendor: RealThread
+pkg_version: 1.0.0
+template_projects:
+- builtin_files:
+  - files_and_folders:
+    - .config
+    - .cproject
+    - .project
+    - .settings
+    - am335x_DDR.icf
+    - am335x_sk.ewp
+    - am335x_sk.eww
+    - AM335x_sk_DDR3.mac
+    - applications
+    - beaglebone_ram.lds
+    - cconfig.h
+    - drivers
+    - Kconfig
+    - makefile.targets
+    - rtconfig.h
+    - rtconfig.py
+    - rtconfig_preinc.h
+    - SConscript
+    - SConstruct
+    - uboot_cmd.txt
+    source_path_offset: project_0
+    target_path_offset: ''
+  external_files:
+  - files_and_folders:
+    - components
+    - include
+    - libcpu/arm
+    - libcpu/Kconfig
+    - libcpu/SConscript
+    - src
+    - tools
+    - Kconfig
+    - LICENSE
+    package_name: RT-Thread
+    package_type: RT-Thread_Source_Code
+    package_vendor: ''
+    package_version: latest
+    source_path_offset: rt-thread
+    target_path_offset: rt-thread
+  project_description: beaglebone
+  project_name: beaglebone
+  project_type: rt-thread|@full|@latest
+yaml_version: 3
